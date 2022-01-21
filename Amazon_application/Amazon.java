@@ -1,11 +1,9 @@
 import java.util.*;
 class admin extends merchant{
     static Scanner sc=new Scanner(System.in);
-    //String
+   
     static void adduser(){
-       //System.out.println("Enter user Name");
-       //String a=sc.nextLine();
-       //boolean ans1=li.contains(a);
+       
        int k=li3.indexOf("notapproved");
        if(k>=0){
            System.out.println(li.get(k));
