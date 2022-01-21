@@ -22,6 +22,9 @@ public class VehicleRental
     static List<Integer>li4=new ArrayList<>();
     static List<Integer>li5=new ArrayList<>();
     static List<Integer>li6=new ArrayList<>();
+	
+	
+	
     
     static List<String>name=new ArrayList<>();
     static List<Integer>start=new ArrayList<>();
@@ -29,6 +32,8 @@ public class VehicleRental
     static List<String>status=new ArrayList<>();
     
     static void user(){
+	    
+	    
 		    System.out.println("1.Book Ticket");
 		    System.out.println("2.Review Ticket");
 		    System.out.println("3.Delete Ticket");
@@ -286,11 +291,7 @@ public class VehicleRental
 	x1=waiting.get(0);
     r=waiting1.get(0);
     s=waiting2.get(0);
-   // r1=waiting1.get(1);
-    //s1=waiting2.get(1);
-    //r2=waiting1.get(2);
-    //s2=waiting2.get(2);
-    for(int i=r;i<s-1;i++){
+   for(int i=r;i<s-1;i++){
         li4.add(i);
       }
     if(seats1.get(r-1)==0 && seats1.get(s-1)==0){
@@ -498,11 +499,16 @@ public static void waitinga1(){
 		        }
 		        }
 }
+	
+	
+	
+	
+	
 public static void waitinga2(){
-   // r=waiting1.get(0);
-    //s=waiting2.get(0);
-   //r1=waiting1.get(1);
-   //s1=waiting2.get(1);
+   
+	
+	
+	
    x3=waiting.get(2);
     r2=waiting1.get(2);
     s2=waiting2.get(2);
@@ -537,10 +543,13 @@ public static void waitinga2(){
 		                seats2.set(m3,1);
 		            }
 		            li6.clear();
+				    
 		            waiting.remove(2);
 		            waiting1.remove(2);
 		            waiting2.remove(2);
 		            waiting3.remove(2);
+				    
+				    
 		            name.add(x3);
 		            start.add(r2);
 		            end.add(s2);
@@ -607,6 +616,8 @@ public static void waitinga2(){
 		        }
 }
 	public static void main(String[] args) {
+		
+		
 	    seats1.add(0);
 	    seats1.add(0);
 	    seats1.add(0);
@@ -638,10 +649,14 @@ public static void waitinga2(){
 	    seats5.add(0);
 	    
 		do{
+			
+			
 		    System.out.println("Welcome to Vehicle Booking :");
+			
 		    System.out.println("1.New User");
 		    System.out.println("2.Existing User ");
 		    System.out.println("3.Exit");
+			
 		    ch=sc.nextInt();
 		    sc.nextLine();
 		    System.out.print("\033[H\033[2J");  
